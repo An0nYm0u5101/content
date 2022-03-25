@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "@mdx-js/mdx": "^1.6.6",
     "commander": "^5.0.0",
     "fs-extra": "^8.1.0",
-    "jsdoc-to-markdown": "^5.0.3"
-  }
+    "jsdoc-to-markdown": "^5.0.3",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
